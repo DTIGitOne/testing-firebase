@@ -1,10 +1,10 @@
 import Footer from "../component/Footer";
-import Top from "../component/Top";
+import ItemsMain from "../component/ItemsMain";
 
 const Main = () => {
    return (
       <div className=" h-full w-full flex flex-col">
-       <Top />
+       <ItemsMain />
        <Footer tittle="Add car"/>
       </div>
    );
