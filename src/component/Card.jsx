@@ -27,6 +27,9 @@ const MediaCard = ( props ) => {
         <Typography gutterBottom variant="h5" component="div">
           {props.year}
         </Typography>
+        <Button gutterBottom variant="h5" variant="contained" color='error' onClick={props.userDelete}>
+          delete
+        </Button>
       </CardContent>
     </Card>
   );
