@@ -114,6 +114,7 @@ const ItemsMain = () => {
              <ul>
                {authors.map(aut => (
                  aut.id === act.id ? <MediaCard 
+                 id={act.id}
                  brand={act.title} 
                  model={act.dueDate} 
                  price={act.completed}  

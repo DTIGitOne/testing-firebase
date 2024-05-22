@@ -5,8 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 const MediaCard = ( props ) => {
+
+  const navigate = useNavigate();
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -29,6 +33,9 @@ const MediaCard = ( props ) => {
         </Typography>
         <Button gutterBottom variant="h5" variant="contained" color='error' onClick={props.userDelete}>
           delete
+        </Button>
+        <Button gutterBottom variant="h5" variant="outlined" onClick={() => navigate("/Main/" + props.id)}>
+          view
         </Button>
       </CardContent>
     </Card>
